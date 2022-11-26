@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ExampleSwiftTransition" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="ExampleSwiftTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,9 +29,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="プッシュ遷移"/>
-                                <connections>
-                                    <segue destination="5fE-zo-g6b" kind="show" id="bbP-sT-jzs"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -45,20 +42,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sK6-9d-hAn"/>
+                    <connections>
+                        <outlet property="pushButton" destination="Y7Q-gZ-c0j" id="aA0-gJ-ez1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959.5419847328244" y="-27.464788732394368"/>
-        </scene>
-        <!--Screen2-->
-        <scene sceneID="74Y-ve-K5P">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Screen2" id="5fE-zo-g6b" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="gwD-cG-SrK"/>
-                </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="83q-bk-APL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1733" y="-28"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KzK-Qx-5lD">

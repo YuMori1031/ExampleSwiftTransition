@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Screen2 View Controller-->
         <scene sceneID="q1z-WE-MCS">
             <objects>
-                <viewController id="v0F-6T-4hg" sceneMemberID="viewController">
+                <viewController id="v0F-6T-4hg" customClass="Screen2ViewController" customModule="ExampleSwiftTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rKw-Le-e6L">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,9 +29,6 @@
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="モーダル遷移"/>
-                                <connections>
-                                    <segue destination="NsL-oz-8DR" kind="presentation" id="Opc-f2-eLK"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yve-cU-cXj"/>
@@ -45,18 +42,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xyU-9g-xMG"/>
+                    <connections>
+                        <outlet property="modalButton" destination="1Af-g0-jTt" id="kcy-yL-Cps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nfm-Lj-jty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1858" y="-28"/>
-        </scene>
-        <!--Modal-->
-        <scene sceneID="Ylk-sg-Um0">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Modal" id="NsL-oz-8DR" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Nkt-AD-COc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2473" y="-27"/>
         </scene>
     </scenes>
     <resources>
