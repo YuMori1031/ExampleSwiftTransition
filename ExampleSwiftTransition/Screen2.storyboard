@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v0F-6T-4hg">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="q1z-WE-MCS">
+            <objects>
+                <viewController id="v0F-6T-4hg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rKw-Le-e6L">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="画面2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="guS-O0-AkJ">
+                                <rect key="frame" x="157" y="408" width="79" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Af-g0-jTt">
+                                <rect key="frame" x="20" y="763" width="353" height="35"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="モーダル遷移"/>
+                                <connections>
+                                    <segue destination="NsL-oz-8DR" kind="presentation" id="Opc-f2-eLK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yve-cU-cXj"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="yve-cU-cXj" firstAttribute="bottom" secondItem="1Af-g0-jTt" secondAttribute="bottom" constant="20" id="7gd-At-3nx"/>
+                            <constraint firstItem="yve-cU-cXj" firstAttribute="trailing" secondItem="1Af-g0-jTt" secondAttribute="trailing" constant="20" id="8Xd-Wu-cMS"/>
+                            <constraint firstItem="1Af-g0-jTt" firstAttribute="leading" secondItem="yve-cU-cXj" secondAttribute="leading" constant="20" id="SCy-wK-1En"/>
+                            <constraint firstItem="guS-O0-AkJ" firstAttribute="centerY" secondItem="rKw-Le-e6L" secondAttribute="centerY" id="dpw-9S-Lmu"/>
+                            <constraint firstItem="guS-O0-AkJ" firstAttribute="centerX" secondItem="rKw-Le-e6L" secondAttribute="centerX" id="feE-Y6-KFF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xyU-9g-xMG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nfm-Lj-jty" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1858" y="-28"/>
+        </scene>
+        <!--Modal-->
+        <scene sceneID="Ylk-sg-Um0">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Modal" id="NsL-oz-8DR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nkt-AD-COc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2473" y="-27"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
